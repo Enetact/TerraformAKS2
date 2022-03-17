@@ -25,18 +25,18 @@ stages:
             terraformVersion: 'latest'
         - task: TerraformCLI@0
           inputs:
-                command: 'init'
-                workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
-                backendType: 'azurerm'
-                backendServiceArm: 'terraform-aks-azurerm-svc-con'
-                backendAzureRmSubscriptionId: 'ddb8958b-0d44-46bf-bdaa-46c88bd07cf0'
-                ensureBackend: true
-                backendAzureRmResourceGroupName: 'terraform-storage-rg'
-                backendAzureRmResourceGroupLocation: 'westus'
-                backendAzureRmStorageAccountName: 'terraformstatexlrwdrzs'
-                backendAzureRmContainerName: 'terraformstatecontainer'
-                backendAzureRmKey: 'aks-base.tfstate'
-                allowTelemetryCollection: true
+            command: 'init'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
+            backendType: 'azurerm'
+            backendServiceArm: 'terraform-aks-azurerm-svc-con'
+            backendAzureRmSubscriptionId: 'ddb8958b-0d44-46bf-bdaa-46c88bd07cf0'
+            ensureBackend: true
+            backendAzureRmResourceGroupName: 'terraform-storage-rg'
+            backendAzureRmResourceGroupLocation: 'westus'
+            backendAzureRmStorageAccountName: 'terraformstatexlrwdrzs2222'
+            backendAzureRmContainerName: 'terraformstatecontainer22'
+            backendAzureRmKey: 'aks-base.tfstate'
+            allowTelemetryCollection: true
 
         - task: TerraformCLI@0
           inputs:
