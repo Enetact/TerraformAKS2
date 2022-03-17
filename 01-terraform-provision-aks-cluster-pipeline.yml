@@ -60,7 +60,7 @@ stages:
       pool:
         vmImage: 'ubuntu-latest'
       environment: $(Dev_Environment)
-      stradegy: 
+      strategy: 
         RunOnce: 
           deploy:
             steps:
