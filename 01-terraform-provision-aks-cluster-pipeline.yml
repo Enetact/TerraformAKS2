@@ -33,7 +33,7 @@ stages:
             ensureBackend: true
             backendAzureRmResourceGroupName: 'terraform-storage-rg'
             backendAzureRmResourceGroupLocation: 'westus'
-            backendAzureRmStorageAccountName: 'terraformstatexlrwdrzs2222'
+            backendAzureRmStorageAccountName: 'statekubernetesfiles'
             backendAzureRmContainerName: 'terraformstatecontainer22'
             backendAzureRmKey: 'aks-base.tfstate'
             allowTelemetryCollection: true
